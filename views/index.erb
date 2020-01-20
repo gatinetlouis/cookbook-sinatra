@@ -1,0 +1,14 @@
+<p>
+  Here is the list of recipes :
+</p>
+
+
+<% @cookbook.all.each_with_index do |recipe, index| %>
+
+<li>
+  <%= "#{index + 1} : #{recipe.name} - #{recipe.description} - (#{recipe.prep_time}) - #{recipe.difficulty}" %>
+</li>
+
+<% end %>
+
+ <li><a href="http://localhost:4567/new">Create a user story</a></li>
